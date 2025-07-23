@@ -115,4 +115,37 @@ int main(void) {
     printf("+---------------------+-----------+-----------------+-----------------+\n");
 
     printf("\n===========================================================================\n\n");
+
+    printf("   _____ _                _       \n");
+    printf("  / ____| |              | |      \n");
+    printf(" | (___ | |__   ___  _ __| |_ ___ \n");
+    printf("  \\___ \\| '_ \\ / _ \\| '__| __/ __|\n");
+    printf("  ____) | | | | (_) | |  | |_\\__ \\\n");
+    printf(" |_____/|_| |_|\\___/|_|   \\__|___/\n");
+    printf("\n");
+
+    int shoQTY;
+    double shoUPrice, shoDiscount;
+
+    printf("Number of Shorts: ");
+    scanf("%d", &shoQTY);
+
+    printf("Unit Price of Short: ");
+    scanf("%lf", &shoUPrice);
+
+    printf("Discount Rate (%%): ");
+    scanf("%lf", &shoDiscount);
+
+    double shoDis = shoUPrice * shoQTY * shoDiscount / 100.0;
+    double shoAmount = (shoUPrice * shoQTY) - shoDis;
+
+    printf("\n+---------------------+-----------+-----------------+-----------------+\n");
+    printf("|  Description        |    QTY    |   Unit Price    |      Amount     |\n");
+    printf("+---------------------+-----------+-----------------+-----------------+\n");
+    printf("|   Shorts            |%10d |%16.2f |%16.2f |\n", shoQTY, shoUPrice, shoAmount);
+    printf("+---------------------+-----------+-----------------+-----------------+\n");
+
+    printf("\n===========================================================================\n\n");
+
+    return 0;
 }
