@@ -85,4 +85,34 @@ int main(void) {
 
     printf("\n===========================================================================\n\n");
 
+    printf("   _____ _     _      _       \n");
+    printf("  / ____| |   (_)    | |      \n");
+    printf(" | (___ | |__  _ _ __| |_ ___ \n");
+    printf("  \\___ \\| '_ \\| | '__| __/ __|\n");
+    printf("  ____) | | | | | |  | |_\\__ \\\n");
+    printf(" |_____/|_| |_|_|_|   \\__|___/\n");
+    printf("\n");
+
+    int sQTY;
+    double sUPrice, sDiscount;
+
+    printf("Number of Shirts: ");
+    scanf("%d", &sQTY);
+
+    printf("Unit Price of Shirt: ");
+    scanf("%lf", &sUPrice);
+
+    printf("Discount Rate (%%): ");
+    scanf("%lf", &sDiscount);
+
+    double sDis = sUPrice * sQTY * sDiscount / 100.0;
+    double sAmount = (sUPrice * sQTY) - sDis;
+
+    printf("\n+---------------------+-----------+-----------------+-----------------+\n");
+    printf("|  Description        |    QTY    |   Unit Price    |      Amount     |\n");
+    printf("+---------------------+-----------+-----------------+-----------------+\n");
+    printf("|  Shirts             |%10d |%16.2f |%16.2f |\n", sQTY, sUPrice, sAmount);
+    printf("+---------------------+-----------+-----------------+-----------------+\n");
+
+    printf("\n===========================================================================\n\n");
 }
