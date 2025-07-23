@@ -53,4 +53,36 @@ int main(void) {
     printf("+---------------------+-----------+-----------------+-----------------+\n");
 
     printf("\n===========================================================================\n\n");
+
+    printf("  _______                                \n");
+    printf(" |__   __|                               \n");
+    printf("    | |_ __ ___  _   _ ___  ___ _ __ ___ \n");
+    printf("    | | '__/ _ \\| | | / __|/ _ \\ '__/ __|\n");
+    printf("    | | | | (_) | |_| \\__ \\  __/ |  \\__ \\\n");
+    printf("    |_|_|  \\___/ \\__,_|___/\\___|_|  |___/\n");
+    printf("\n");
+
+    int troQTY;
+    double troUPrice, troDiscount;
+
+    printf("Number of Trousers: ");
+    scanf("%d", &troQTY);
+
+    printf("Unit Price of Trouser: ");
+    scanf("%lf", &troUPrice);
+
+    printf("Discount Rate (%%): ");
+    scanf("%lf", &troDiscount);
+
+    double troDis = troUPrice * troQTY * troDiscount / 100.0;
+    double troAmount = (troUPrice * troQTY) - troDis;
+
+    printf("\n+---------------------+-----------+-----------------+-----------------+\n");
+    printf("|  Description        |    QTY    |   Unit Price    |      Amount     |\n");
+    printf("+---------------------+-----------+-----------------+-----------------+\n");
+    printf("|  Trousers           |%10d |%16.2f |%16.2f |\n", troQTY, troUPrice, troAmount);
+    printf("+---------------------+-----------+-----------------+-----------------+\n");
+
+    printf("\n===========================================================================\n\n");
+
 }
