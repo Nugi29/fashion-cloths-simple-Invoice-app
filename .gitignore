@@ -1,0 +1,35 @@
+# Ignore build directories
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+build.ninja
+rules.ninja
+
+# Ignore executables and object files
+*.exe
+*.obj
+*.o
+*.a
+*.so
+*.dll
+*.lib
+*.pdb
+
+# Ignore CLion/IDE files
+.idea/
+*.iml
+
+# Ignore test and temporary files
+Testing/
+*.log
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore user-specific files
+*.user
+*.swp
+*~
+
