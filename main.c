@@ -147,5 +147,32 @@ int main(void) {
 
     printf("\n===========================================================================\n\n");
 
+    double total = tAmount + troAmount + sAmount + shoAmount;
+
+    printf("+---------------------------------------------------------------------+\n");
+    printf("|             ___ _ _ _   ___                                        |\n");
+    printf("|            | _ |_) | | / __|_  _ _ __  _ __  __ _ _ _ _  _          |\n");
+    printf("|            | _ \\ | | | \\__ \\ || | '  \\| '  \\/ _` | '_| || |         |\n");
+    printf("|            |___/_|_|_| |___/\\_,_|_|_|_|_|_|_\\__,_|_|  \\_, |         |\n");
+    printf("|                                                       |__/          |\n");
+    printf("|                                                                     |\n");
+    printf("|   Customer: %-20s                  Date: %-11s |\n", customerName, date);
+    printf("|                                                                     |\n");
+    printf("+---------------------+-----------+-----------------+-----------------+\n");
+    printf("|  Description        |    QTY    |   Unit Price    |      Amount     |\n");
+    printf("+---------------------+-----------+-----------------+-----------------+\n");
+    printf("|                     |           |                 |                 |\n");
+    printf("|   T-Shirts          |%10d |%16.2f |%16.2f |\n", tQTY, tShirtUPrice, tAmount);
+    printf("|                     |           |                 |                 |\n");
+    printf("|  Trousers           |%10d |%16.2f |%16.2f |\n", troQTY, troUPrice, troAmount);
+    printf("|                     |           |                 |                 |\n");
+    printf("|  Shirts             |%10d |%16.2f |%16.2f |\n", sQTY, sUPrice, sAmount);
+    printf("|                     |           |                 |                 |\n");
+    printf("|   Shorts            |%10d |%16.2f |%16.2f |\n", shoQTY, shoUPrice, shoAmount);
+    printf("|                     |           |                 |                 |\n");
+    printf("+---------------------+-----------+-----------------+-----------------+\n");
+    printf("|   Total                                           |%16.2f |\n", total);
+    printf("+---------------------------------------------------+-----------------+\n");
+
     return 0;
 }
